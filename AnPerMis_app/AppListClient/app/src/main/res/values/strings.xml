@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">AnPerMis</string>
+    <string name="accept_handover">Permite a la aplicación continuar una llamada que ha comenzado en otra.\n\n
+        Ejemplo: Cuando una aplicacion de videollamadas quiere continuar la llamada en el navegador.\n\n</string>
+    <string name="access_background">Permite a la aplicación acceder a tu ubicación en segundo plano.\n\n</string>
+    <string name="access_coarse">Permite a la aplicación acceder a tu ubicación aproximada basada en los datos de antenas móviles o puntos de acceso WiFi.\n\n</string>
+    <string name="access_fine">Permite a la aplicación acceder a tu ubicación precisa basada en los datos GPS.\n\n</string>
+    <string name="access_media">Permite a la aplicación acceder a cualquier ubicación que hayas compartido anteriormente.\n\n</string>
+    <string name="activity_recognition">Permite a la aplicación reconocer tus actividades físicas.\n\n</string>
+    <string name="add_voicemail">Permite a la aplicación añadir un buzón de voz dentro del sistema.\n\n</string>
+    <string name="answer_phone_calls">Permite a la aplicación contestar las llamadas entrantes.\n\n</string>
+    <string name="body_sensors">Permite a la aplicación acceder a los datos que proporcionan los sensores corporales que utilizas para medir lo
+        que esta sucediendo en tu cuerpo, como por ejemplo la frecuencia cardiaca.\n\n</string>
+    <string name="call_phone">Permite a la aplicación iniciar una llamada telefonica automáticamente sin pasar por el marcador.\n\n</string>
+    <string name="camera">Permite a la aplicación utilizar la cámara de tu dispositivo.\n\n</string>
+    <string name="get_accounts">Permite a la aplicación acceder la lista de cuentas de tu dispositivo.\n\n</string>
+    <string name="process_outgoing_calls">Permite a la aplicación ver el número de teléfono que se esta marcando durante una llamada saliente
+        con la opción de redirigir esta llamada a un número diferente o cancelar la llamada.\n\n</string>
+    <string name="read_calendar">Permite a la aplicación leer los eventos de tu calendario.\n\n</string>
+    <string name="read_call_log">Permite a la aplicación leer tu registro de llamadas.\n\n</string>
+    <string name="read_contacts">Permite a la aplicación leer los datos de tus contactos.\n\n</string>
+    <string name="read_external_storage">Permite a la aplicación leer tus tarjetas SD u otro almacenamiento.\n\n</string>
+    <string name="read_phone_numbers">Permite a la aplicación acceder a los números de teléfono de tu dispositivo.\n\n</string>
+    <string name="read_phone_state">Permite a la aplicación acceder al estado de tu teléfono, incluyendo la información de la red y el estado de
+        las llamadas salientes o entrantes.\n\n</string>
+    <string name="read_sms">Permite a la aplicación leer tus mensajes SMS.\n\n</string>
+    <string name="recive_mms">Permite a la aplicación monitorizar los MMS que recibes.\n\n</string>
+    <string name="recive_sms">Permite a la aplicación recibir SMS.\n\n</string>
+    <string name="recive_wap_push">Permite a la aplicación recibir mensajes WAP PUSH que es un mensaje SMS que se utiliza para acceder
+        de una manera sencilla a una página web sin necesidad de conocer su dirección.\n\n</string>
+    <string name="record_audio">Permite a la aplicación grabar audio.\n\n</string>
+    <string name="send_sms">Permite a la aplicación enviar mensajes SMS.\n\n</string>
+    <string name="use_sip">Permite a la aplicación utilizar el servicio de voz sobre IP también conocido como VoIP.\n\n</string>
+    <string name="write_calendar">Permite a la aplicación escribir o editar eventos de tu calendario.\n\n</string>
+    <string name="write_call_log">Permite a la aplicación escribir (pero no leer) datos en tu registro de llamadas.\n\n</string>
+    <string name="write_contacts">Permite a la aplicación acceder escribir en los datos de tus contactos.\n\n</string>
+    <string name="write_external_storage">Permite a la aplicación escribir en el almacenamiento o la tarjeta SD de tu dispositivo.\n\n</string>
+    <string name="amarillo_ini">Resultado del análisis: \n\n<b>PUEDE APARECER.</b>\n\n
+       El resultado del análisis indica que este permiso puede aparecer en la categoría</string>
+    <string name="amarillo_fin">y además está presente en más del 75% de las aplicaciones de su categoría.</string>
+    <string name="rojo_ini">Resultado del análisis: \n\n<b>NO DEBERÍA APARECER.</b>\n\n</string>
+    <string name="naranja_ini">Resultado del análisis: \n\n<b>APARECE EN EL </b></string>
+    <string name="naranja_fin"><b>DE LAS APLICACIONES DE SU CATEGORÍA.</b>\n\n</string>
+    <string name="rojo_opi_ini">
+        El resultado del análisis indica que este permiso puede aparecer en la categoría</string>
+    <string name="rojo_opi_fin">pero no esta presente en la mayoría de aplicaciones de esta categoría.\n\n</string>
+    <string name="rojo_freq_ini">El resultado del análisis indica que este permiso no debería aparecer en la categoría</string>
+    <string name="rojo_freq_fin">pero aparece en más del 75% de las aplicaciones de esta categoría.\n\n</string>
+    <string name="rojo_ambos">y además no está presente en la mayoría de aplicaciones de esta categoría.\n\n</string>
+    <string name="recomendacion">Te recomendamos NO CONCEDER este permiso a la aplicación.\n\nToca Ajustes > Permisos, y desactiva </string>
+    <string name="recomendacion_naranja">Revisa bien para que podría utilizarse este permiso en la aplicación y concédelo si lo consideras necesario.\n\nSi lo quieres revocar, toca Ajustes > Permisos, y desactiva
+    </string>
+    <string name="help">
+        Para utilizar AnPerMis (Android Permission Misuse), pulsa sobre culquiera de las aplicaciones de la lista, a continuación, aparecerá una nueva pestaña
+        en la que se muestra información básica de la aplicación junto con los resultados del análisis de permisos(*). \n\n
+        Este análisis se basa en la frecuencia de aparición de permisos abusivos en aplicaciones que pertenecen a la misma categoría y en un estudio
+        de permisos peligrosos que pueden aparecer en cada una de las categorías. \n\n
+        <b>Cómo interpretar los resultados del análisis:</b> \n\n
+        Por cada aplicación aparecerá su nombre, su categoría para la Google Play Store (que se utilizará para realizar el análisis) y una señal
+        roja, amarilla o verde con el resultado global del análisis de permisos.\n\n
+        <b>(Rojo: Hay un porcentaje alto de permisos peligrosos que no deberían aparecer en su categoría)\n
+        (Amarillo: Hay un porcentaje bajo de permisos peligrosos que no deberían aparecer en la categoría)\n
+        (Verde: La aplicación no solicita permisos peligrosos)</b>\n\n
+        También aparecerá una lista con los permisos peligrosos que puede solicitar cada aplicacion. En cada uno de estos permisos podemos
+        encontrar su nombre, nombre descriptivo del permiso para Android y el resultado simplificado del análisis. \n
+        En este resultado simplificado se incluye una señal de advertencia (amarilla, naranja o roja) junto con su porcentaje de aparición en aplicaciónes
+        de la misma categoría.\n\n
+        <b>(Rojo: El permiso aparece en menos del 75% de las aplicaciones de su misma categoría y además, no debería aparecer en la categoría..\n
+            (Naranja: El permiso aparece en más de la mitad de las aplicaciones de su misma categoría y además, puede aparecer en la categoría.)\n
+            (Amarillo: El permiso aparece en más del 75% de las aplicaciones de su misma categoría y además, puede aparecer en la categoría.).
+        </b>\n\n
+        También se proporciona información detallada del permiso, el resultado del análisis y recomendaciones pulsando en cada uno de estos permisos.\n\n
+        <b>¿Qué puedo hacer si la aplicación analizada presenta mas permisos de los necesarios?\n\n</b>
+        En la parte de abajo de la pestaña que muestra los resultados del análisis aparecen 2 botones:\n\n
+        <b>BOTÓN AJUSTES:</b> Al pulsar este botón se mostrará la pestaña del administrador de esta aplicacion, en ella pueden verse varias opciones
+        entre las que se incluyen desinstalar aplicación, forzar detención y gestor de permisos, entre otras muchas.\n
+        Para administrar los permisos de una aplicacion pulsaremos sobre la opción Perrmisos donde se muestran todos los permisos que puede solicitar la
+        aplicación, despues simplemente apagaremos los interruptores de los permisos que queramos dejar de conceder, siguiendo las recomendaciones del
+        análisis.\n\n
+
+        <b>BOTÓN COMENTAR:</b> Si tras deshabilitar alguno de los permisos la aplicación deja de funcionar, te recomendamos que adviertas al desarrollador y al resto de usuarios
+        en su página de la Google PlayStore pulsando sobre el botón comentar.\n\n
+        <b>Categorías que pueden contener aplicaciones potencialmente mal clasificadas:</b>\n\n
+        Existen 3 categorias de la Google Play Store que pueden incluir aplicaciones que no deberían estar en esas categorías, estas categorías son
+        Herramientas (TOOLS), Estilo de Vida (LIFESTYLE) y Bibliotecas y Demos (LIBRARIES_AND_DEMOS) por lo que los análisis de aplicaciones pertenecientes
+        a estas categorías puede ser erróneo.\n\n
+        <b>*Se necesita una conexion a Internet activa para realizar el análisis.</b>
+    </string>
+    <string name="ajustes">Si tras retirar algún permiso abusivo la aplicación deja de funcionar o vuelve a solicitar dicho permiso como requisito al arrancar, pulsa el botón COMENTAR y añade un comentario en la página del desarrollador
+        para advertir a la comunidad. \n\n
+        Gracias por tu colaboración.
+    </string>
+    <string name="dang_cat"> que es una categoria ambigua que incluye aplicaciones de tipos muy diferentes, que pueden no tener nada que ver con esta categoría.\n\nPor este motivo los resultados del análisis que se muestran a continuación pueden ser erróneos."</string>
+    <string name="no_category">No se ha podido acceder a la categoría de esta aplicación por lo que su análisis no esta disponible en este momento.\n\nPor favor, revisa tu conexión.\nSi tras realizar esta comprobación el problema persiste, es muy posible que esta aplicación no esta disponible en la Google Play Store.</string>
+</resources>

@@ -1,0 +1,428 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "ba5108b9ae9029379cfe6d6cd634c5ef",
+    "entities": [
+      {
+        "tableName": "Application",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`appPackage` TEXT NOT NULL, `appCategory` TEXT NOT NULL, PRIMARY KEY(`appPackage`))",
+        "fields": [
+          {
+            "fieldPath": "appPackage",
+            "columnName": "appPackage",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "appCategory",
+            "columnName": "appCategory",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "appPackage"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "categoryFrequencies",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`category` TEXT NOT NULL, `android.permission.ACCEPT_HANDOVER` REAL NOT NULL, `android.permission.ACCESS_BACKGROUND_LOCATION` REAL NOT NULL, `android.permission.ACCESS_COARSE_LOCATION` REAL NOT NULL, `android.permission.ACCESS_FINE_LOCATION` REAL NOT NULL, `android.permission.ACCESS_MEDIA_LOCATION` REAL NOT NULL, `android.permission.ACTIVITY_RECOGNITION` REAL NOT NULL, `android.permission.ADD_VOICEMAIL` REAL NOT NULL, `android.permission.ANSWER_PHONE_CALLS` REAL NOT NULL, `android.permission.BODY_SENSORS` REAL NOT NULL, `android.permission.CALL_PHONE` REAL NOT NULL, `android.permission.CAMERA` REAL NOT NULL, `android.permission.GET_ACCOUNTS` REAL NOT NULL, `android.permission.PROCESS_OUTGOING_CALLS` REAL NOT NULL, `android.permission.READ_CALENDAR` REAL NOT NULL, `android.permission.READ_CALL_LOG` REAL NOT NULL, `android.permission.READ_CONTACTS` REAL NOT NULL, `android.permission.READ_EXTERNAL_STORAGE` REAL NOT NULL, `android.permission.READ_PHONE_NUMBERS` REAL NOT NULL, `android.permission.READ_PHONE_STATE` REAL NOT NULL, `android.permission.READ_SMS` REAL NOT NULL, `android.permission.RECIVE_MMS` REAL NOT NULL, `android.permission.RECIVE_SMS` REAL NOT NULL, `android.permission.RECIVE_WAP_PUSH` REAL NOT NULL, `android.permission.RECORD_AUDIO` REAL NOT NULL, `android.permission.SEND_SMS` REAL NOT NULL, `android.permission.USE_SIP` REAL NOT NULL, `android.permission.WRITE_CALL_LOG` REAL NOT NULL, `android.permission.WRITE_CONTACTS` REAL NOT NULL, `android.permission.WRITE_EXTERNAL_STORAGE` REAL NOT NULL, PRIMARY KEY(`category`))",
+        "fields": [
+          {
+            "fieldPath": "categoryName",
+            "columnName": "category",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ACCEPT_HANDOVER",
+            "columnName": "android.permission.ACCEPT_HANDOVER",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ACCESS_BACKGROUND_LOCATION",
+            "columnName": "android.permission.ACCESS_BACKGROUND_LOCATION",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ACCESS_COARSE_LOCATION",
+            "columnName": "android.permission.ACCESS_COARSE_LOCATION",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ACCESS_FINE_LOCATION",
+            "columnName": "android.permission.ACCESS_FINE_LOCATION",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ACCESS_MEDIA_LOCATION",
+            "columnName": "android.permission.ACCESS_MEDIA_LOCATION",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ACTIVITY_RECOGNITION",
+            "columnName": "android.permission.ACTIVITY_RECOGNITION",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ADD_VOICEMAIL",
+            "columnName": "android.permission.ADD_VOICEMAIL",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ANSWER_PHONE_CALLS",
+            "columnName": "android.permission.ANSWER_PHONE_CALLS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "BODY_SENSORS",
+            "columnName": "android.permission.BODY_SENSORS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "CALL_PHONE",
+            "columnName": "android.permission.CALL_PHONE",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "CAMERA",
+            "columnName": "android.permission.CAMERA",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "GET_ACCOUNTS",
+            "columnName": "android.permission.GET_ACCOUNTS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "PROCESS_OUTGOING_CALLS",
+            "columnName": "android.permission.PROCESS_OUTGOING_CALLS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "READ_CALENDAR",
+            "columnName": "android.permission.READ_CALENDAR",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "READ_CALL_LOG",
+            "columnName": "android.permission.READ_CALL_LOG",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "READ_CONTACTS",
+            "columnName": "android.permission.READ_CONTACTS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "READ_EXTERNAL_STORAGE",
+            "columnName": "android.permission.READ_EXTERNAL_STORAGE",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "READ_PHONE_NUMBERS",
+            "columnName": "android.permission.READ_PHONE_NUMBERS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "READ_PHONE_STATE",
+            "columnName": "android.permission.READ_PHONE_STATE",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "READ_SMS",
+            "columnName": "android.permission.READ_SMS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "RECIVE_MMS",
+            "columnName": "android.permission.RECIVE_MMS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "RECIVE_SMS",
+            "columnName": "android.permission.RECIVE_SMS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "RECIVE_WAP_PUSH",
+            "columnName": "android.permission.RECIVE_WAP_PUSH",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "RECORD_AUDIO",
+            "columnName": "android.permission.RECORD_AUDIO",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "SEND_SMS",
+            "columnName": "android.permission.SEND_SMS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "USE_SIP",
+            "columnName": "android.permission.USE_SIP",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "WRITE_CALL_LOG",
+            "columnName": "android.permission.WRITE_CALL_LOG",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "WRITE_CONTACTS",
+            "columnName": "android.permission.WRITE_CONTACTS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "WRITE_EXTERNAL_STORAGE",
+            "columnName": "android.permission.WRITE_EXTERNAL_STORAGE",
+            "affinity": "REAL",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "category"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "categoryOpinion",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`category` TEXT NOT NULL, `android.permission.WRITE_EXTERNAL_STORAGE` REAL NOT NULL, `android.permission.READ_EXTERNAL_STORAGE` REAL NOT NULL, `android.permission.ACCESS_COARSE_LOCATION` REAL NOT NULL, `android.permission.ACCESS_FINE_LOCATION` REAL NOT NULL, `android.permission.ACCESS_BACKGROUND_LOCATION` REAL NOT NULL, `android.permission.ACCESS_MEDIA_LOCATION` REAL NOT NULL, `android.permission.ACTIVITY_RECOGNITION` REAL NOT NULL, `android.permission.ACCEPT_HANDOVER` REAL NOT NULL, `android.permission.CALL_PHONE` REAL NOT NULL, `android.permission.READ_PHONE_STATE` REAL NOT NULL, `android.permission.READ_PHONE_NUMBERS` REAL NOT NULL, `android.permission.READ_CALL_LOG` REAL NOT NULL, `android.permission.WRITE_CALL_LOG` REAL NOT NULL, `android.permission.ADD_VOICEMAIL` REAL NOT NULL, `android.permission.USE_SIP` REAL NOT NULL, `android.permission.PROCESS_OUTGOING_CALLS` REAL NOT NULL, `android.permission.ANSWER_PHONE_CALLS` REAL NOT NULL, `android.permission.SEND_SMS` REAL NOT NULL, `android.permission.RECIVE_SMS` REAL NOT NULL, `android.permission.READ_SMS` REAL NOT NULL, `android.permission.RECIVE_MMS` REAL NOT NULL, `android.permission.RECIVE_WAP_PUSH` REAL NOT NULL, `android.permission.READ_CONTACTS` REAL NOT NULL, `android.permission.WRITE_CONTACTS` REAL NOT NULL, `android.permission.GET_ACCOUNTS` REAL NOT NULL, `android.permission.READ_CALENDAR` REAL NOT NULL, `android.permission.CAMERA` REAL NOT NULL, `android.permission.RECORD_AUDIO` REAL NOT NULL, `android.permission.BODY_SENSORS` REAL NOT NULL, PRIMARY KEY(`category`))",
+        "fields": [
+          {
+            "fieldPath": "categoryName",
+            "columnName": "category",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "WRITE_EXTERNAL_STORAGE",
+            "columnName": "android.permission.WRITE_EXTERNAL_STORAGE",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "READ_EXTERNAL_STORAGE",
+            "columnName": "android.permission.READ_EXTERNAL_STORAGE",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ACCESS_COARSE_LOCATION",
+            "columnName": "android.permission.ACCESS_COARSE_LOCATION",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ACCESS_FINE_LOCATION",
+            "columnName": "android.permission.ACCESS_FINE_LOCATION",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ACCESS_BACKGROUND_LOCATION",
+            "columnName": "android.permission.ACCESS_BACKGROUND_LOCATION",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ACCESS_MEDIA_LOCATION",
+            "columnName": "android.permission.ACCESS_MEDIA_LOCATION",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ACTIVITY_RECOGNITION",
+            "columnName": "android.permission.ACTIVITY_RECOGNITION",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ACCEPT_HANDOVER",
+            "columnName": "android.permission.ACCEPT_HANDOVER",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "CALL_PHONE",
+            "columnName": "android.permission.CALL_PHONE",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "READ_PHONE_STATE",
+            "columnName": "android.permission.READ_PHONE_STATE",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "READ_PHONE_NUMBERS",
+            "columnName": "android.permission.READ_PHONE_NUMBERS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "READ_CALL_LOG",
+            "columnName": "android.permission.READ_CALL_LOG",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "WRITE_CALL_LOG",
+            "columnName": "android.permission.WRITE_CALL_LOG",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ADD_VOICEMAIL",
+            "columnName": "android.permission.ADD_VOICEMAIL",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "USE_SIP",
+            "columnName": "android.permission.USE_SIP",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "PROCESS_OUTGOING_CALLS",
+            "columnName": "android.permission.PROCESS_OUTGOING_CALLS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ANSWER_PHONE_CALLS",
+            "columnName": "android.permission.ANSWER_PHONE_CALLS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "SEND_SMS",
+            "columnName": "android.permission.SEND_SMS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "RECIVE_SMS",
+            "columnName": "android.permission.RECIVE_SMS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "READ_SMS",
+            "columnName": "android.permission.READ_SMS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "RECIVE_MMS",
+            "columnName": "android.permission.RECIVE_MMS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "RECIVE_WAP_PUSH",
+            "columnName": "android.permission.RECIVE_WAP_PUSH",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "READ_CONTACTS",
+            "columnName": "android.permission.READ_CONTACTS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "WRITE_CONTACTS",
+            "columnName": "android.permission.WRITE_CONTACTS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "GET_ACCOUNTS",
+            "columnName": "android.permission.GET_ACCOUNTS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "READ_CALENDAR",
+            "columnName": "android.permission.READ_CALENDAR",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "CAMERA",
+            "columnName": "android.permission.CAMERA",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "RECORD_AUDIO",
+            "columnName": "android.permission.RECORD_AUDIO",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "BODY_SENSORS",
+            "columnName": "android.permission.BODY_SENSORS",
+            "affinity": "REAL",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "category"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'ba5108b9ae9029379cfe6d6cd634c5ef')"
+    ]
+  }
+}

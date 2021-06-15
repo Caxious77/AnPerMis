@@ -1,0 +1,434 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "fa651bd8331ce2ededd2ff05139e1126",
+    "entities": [
+      {
+        "tableName": "Application",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`appPackage` TEXT NOT NULL, `appCategory` TEXT NOT NULL, `numPermisos` INTEGER NOT NULL, PRIMARY KEY(`appPackage`))",
+        "fields": [
+          {
+            "fieldPath": "appPackage",
+            "columnName": "appPackage",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "appCategory",
+            "columnName": "appCategory",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "numPermisos",
+            "columnName": "numPermisos",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "appPackage"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "categoryFrequencies",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`category` TEXT NOT NULL, `ACCEPT_HANDOVER` REAL NOT NULL, `ACCESS_BACKGROUND_LOCATION` REAL NOT NULL, `ACCESS_COARSE_LOCATION` REAL NOT NULL, `ACCESS_FINE_LOCATION` REAL NOT NULL, `ACCESS_MEDIA_LOCATION` REAL NOT NULL, `ACTIVITY_RECOGNITION` REAL NOT NULL, `ADD_VOICEMAIL` REAL NOT NULL, `ANSWER_PHONE_CALLS` REAL NOT NULL, `BODY_SENSORS` REAL NOT NULL, `CALL_PHONE` REAL NOT NULL, `CAMERA` REAL NOT NULL, `GET_ACCOUNTS` REAL NOT NULL, `PROCESS_OUTGOING_CALLS` REAL NOT NULL, `READ_CALENDAR` REAL NOT NULL, `READ_CALL_LOG` REAL NOT NULL, `READ_CONTACTS` REAL NOT NULL, `READ_EXTERNAL_STORAGE` REAL NOT NULL, `READ_PHONE_NUMBERS` REAL NOT NULL, `READ_PHONE_STATE` REAL NOT NULL, `READ_SMS` REAL NOT NULL, `RECIVE_MMS` REAL NOT NULL, `RECIVE_SMS` REAL NOT NULL, `RECIVE_WAP_PUSH` REAL NOT NULL, `RECORD_AUDIO` REAL NOT NULL, `SEND_SMS` REAL NOT NULL, `USE_SIP` REAL NOT NULL, `WRITE_CALL_LOG` REAL NOT NULL, `WRITE_CONTACTS` REAL NOT NULL, `WRITE_EXTERNAL_STORAGE` REAL NOT NULL, PRIMARY KEY(`category`))",
+        "fields": [
+          {
+            "fieldPath": "categoryName",
+            "columnName": "category",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ACCEPT_HANDOVER",
+            "columnName": "ACCEPT_HANDOVER",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ACCESS_BACKGROUND_LOCATION",
+            "columnName": "ACCESS_BACKGROUND_LOCATION",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ACCESS_COARSE_LOCATION",
+            "columnName": "ACCESS_COARSE_LOCATION",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ACCESS_FINE_LOCATION",
+            "columnName": "ACCESS_FINE_LOCATION",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ACCESS_MEDIA_LOCATION",
+            "columnName": "ACCESS_MEDIA_LOCATION",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ACTIVITY_RECOGNITION",
+            "columnName": "ACTIVITY_RECOGNITION",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ADD_VOICEMAIL",
+            "columnName": "ADD_VOICEMAIL",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ANSWER_PHONE_CALLS",
+            "columnName": "ANSWER_PHONE_CALLS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "BODY_SENSORS",
+            "columnName": "BODY_SENSORS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "CALL_PHONE",
+            "columnName": "CALL_PHONE",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "CAMERA",
+            "columnName": "CAMERA",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "GET_ACCOUNTS",
+            "columnName": "GET_ACCOUNTS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "PROCESS_OUTGOING_CALLS",
+            "columnName": "PROCESS_OUTGOING_CALLS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "READ_CALENDAR",
+            "columnName": "READ_CALENDAR",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "READ_CALL_LOG",
+            "columnName": "READ_CALL_LOG",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "READ_CONTACTS",
+            "columnName": "READ_CONTACTS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "READ_EXTERNAL_STORAGE",
+            "columnName": "READ_EXTERNAL_STORAGE",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "READ_PHONE_NUMBERS",
+            "columnName": "READ_PHONE_NUMBERS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "READ_PHONE_STATE",
+            "columnName": "READ_PHONE_STATE",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "READ_SMS",
+            "columnName": "READ_SMS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "RECIVE_MMS",
+            "columnName": "RECIVE_MMS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "RECIVE_SMS",
+            "columnName": "RECIVE_SMS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "RECIVE_WAP_PUSH",
+            "columnName": "RECIVE_WAP_PUSH",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "RECORD_AUDIO",
+            "columnName": "RECORD_AUDIO",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "SEND_SMS",
+            "columnName": "SEND_SMS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "USE_SIP",
+            "columnName": "USE_SIP",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "WRITE_CALL_LOG",
+            "columnName": "WRITE_CALL_LOG",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "WRITE_CONTACTS",
+            "columnName": "WRITE_CONTACTS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "WRITE_EXTERNAL_STORAGE",
+            "columnName": "WRITE_EXTERNAL_STORAGE",
+            "affinity": "REAL",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "category"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "categoryOpinion",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`category` TEXT NOT NULL, `ACCEPT_HANDOVER` REAL NOT NULL, `ACCESS_BACKGROUND_LOCATION` REAL NOT NULL, `ACCESS_COARSE_LOCATION` REAL NOT NULL, `ACCESS_FINE_LOCATION` REAL NOT NULL, `ACCESS_MEDIA_LOCATION` REAL NOT NULL, `ACTIVITY_RECOGNITION` REAL NOT NULL, `ADD_VOICEMAIL` REAL NOT NULL, `ANSWER_PHONE_CALLS` REAL NOT NULL, `BODY_SENSORS` REAL NOT NULL, `CALL_PHONE` REAL NOT NULL, `CAMERA` REAL NOT NULL, `GET_ACCOUNTS` REAL NOT NULL, `PROCESS_OUTGOING_CALLS` REAL NOT NULL, `READ_CALENDAR` REAL NOT NULL, `READ_CALL_LOG` REAL NOT NULL, `READ_CONTACTS` REAL NOT NULL, `READ_EXTERNAL_STORAGE` REAL NOT NULL, `READ_PHONE_NUMBERS` REAL NOT NULL, `READ_PHONE_STATE` REAL NOT NULL, `READ_SMS` REAL NOT NULL, `RECIVE_MMS` REAL NOT NULL, `RECIVE_SMS` REAL NOT NULL, `RECIVE_WAP_PUSH` REAL NOT NULL, `RECORD_AUDIO` REAL NOT NULL, `SEND_SMS` REAL NOT NULL, `USE_SIP` REAL NOT NULL, `WRITE_CALL_LOG` REAL NOT NULL, `WRITE_CONTACTS` REAL NOT NULL, `WRITE_EXTERNAL_STORAGE` REAL NOT NULL, PRIMARY KEY(`category`))",
+        "fields": [
+          {
+            "fieldPath": "categoryName",
+            "columnName": "category",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ACCEPT_HANDOVER",
+            "columnName": "ACCEPT_HANDOVER",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ACCESS_BACKGROUND_LOCATION",
+            "columnName": "ACCESS_BACKGROUND_LOCATION",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ACCESS_COARSE_LOCATION",
+            "columnName": "ACCESS_COARSE_LOCATION",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ACCESS_FINE_LOCATION",
+            "columnName": "ACCESS_FINE_LOCATION",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ACCESS_MEDIA_LOCATION",
+            "columnName": "ACCESS_MEDIA_LOCATION",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ACTIVITY_RECOGNITION",
+            "columnName": "ACTIVITY_RECOGNITION",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ADD_VOICEMAIL",
+            "columnName": "ADD_VOICEMAIL",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ANSWER_PHONE_CALLS",
+            "columnName": "ANSWER_PHONE_CALLS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "BODY_SENSORS",
+            "columnName": "BODY_SENSORS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "CALL_PHONE",
+            "columnName": "CALL_PHONE",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "CAMERA",
+            "columnName": "CAMERA",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "GET_ACCOUNTS",
+            "columnName": "GET_ACCOUNTS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "PROCESS_OUTGOING_CALLS",
+            "columnName": "PROCESS_OUTGOING_CALLS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "READ_CALENDAR",
+            "columnName": "READ_CALENDAR",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "READ_CALL_LOG",
+            "columnName": "READ_CALL_LOG",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "READ_CONTACTS",
+            "columnName": "READ_CONTACTS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "READ_EXTERNAL_STORAGE",
+            "columnName": "READ_EXTERNAL_STORAGE",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "READ_PHONE_NUMBERS",
+            "columnName": "READ_PHONE_NUMBERS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "READ_PHONE_STATE",
+            "columnName": "READ_PHONE_STATE",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "READ_SMS",
+            "columnName": "READ_SMS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "RECIVE_MMS",
+            "columnName": "RECIVE_MMS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "RECIVE_SMS",
+            "columnName": "RECIVE_SMS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "RECIVE_WAP_PUSH",
+            "columnName": "RECIVE_WAP_PUSH",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "RECORD_AUDIO",
+            "columnName": "RECORD_AUDIO",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "SEND_SMS",
+            "columnName": "SEND_SMS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "USE_SIP",
+            "columnName": "USE_SIP",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "WRITE_CALL_LOG",
+            "columnName": "WRITE_CALL_LOG",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "WRITE_CONTACTS",
+            "columnName": "WRITE_CONTACTS",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "WRITE_EXTERNAL_STORAGE",
+            "columnName": "WRITE_EXTERNAL_STORAGE",
+            "affinity": "REAL",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "category"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'fa651bd8331ce2ededd2ff05139e1126')"
+    ]
+  }
+}

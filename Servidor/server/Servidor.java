@@ -39,7 +39,7 @@ public class Servidor  extends Thread {
 			System.out.println(Main.FechayHora()+"certificadoTFG.jks NO existe");
 		
 		System.setProperty("javax.net.ssl.keyStore","certificadoTFG.jks");
-		System.setProperty("javax.net.ssl.keyStorePassword","mallorca2017");
+		System.setProperty("javax.net.ssl.keyStorePassword","**********");
 
 
 		SSLServerSocketFactory sslserversocketfactory =(SSLServerSocketFactory)SSLServerSocketFactory.getDefault();
